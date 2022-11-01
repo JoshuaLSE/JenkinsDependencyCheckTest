@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('Checkout SCM') {
 			steps {
-				git 'https://github.com/JoshuaLSE/JenkinsDependencyCheckTest', credentialsId: 'bubblegum_chewed'
+				git (url:'https://github.com/JoshuaLSE/JenkinsDependencyCheckTest', credentialsId: 'bubblegum_chewed')
 			}
 		}
 
